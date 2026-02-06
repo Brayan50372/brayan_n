@@ -123,3 +123,11 @@
   }
 }
 
+.carta {
+  width: 90%;
+  padding: 20px;
+}
+
+.carta .firma {
+  font-size: 18px;
+}

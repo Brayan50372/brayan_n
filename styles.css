@@ -548,6 +548,9 @@ body {
   font-size: 17px;
   line-height: 1.5;
   color: #333;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .carta .firma {
@@ -555,6 +558,13 @@ body {
   font-style: italic;
   text-align: right;
   color: #323232;
+
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(16px, 2.2vw, 22px); /* se adapta al tamaño de pantalla */
+  line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
 }
 
 /* Animación de entrada */
@@ -599,3 +609,15 @@ body {
 }
 
 
+.carta {
+  overflow: hidden;
+}
+
+.carta .firma {
+  font-family: 'Pacifico', cursive;
+  font-size: 22px;
+  line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
